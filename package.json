@@ -1,0 +1,35 @@
+{
+  "name": "question-paper-extractor",
+  "version": "1.0.0",
+  "description": "Secure and memory-optimized pipeline to convert PDF, PNG, and JPEG question papers into structured JSON using WebAssembly OCR.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "start:max-memory": "node --max-old-space-size=4096 src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf-to-json",
+    "ocr",
+    "tesseract",
+    "angular-backend",
+    "pdftoimg",
+    "memory-management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.2.0",
+    "pdf-to-img": "^6.2.0",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
